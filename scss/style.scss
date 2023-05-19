@@ -1,0 +1,141 @@
+/*Variables*/
+@import './base/vars';
+@import './base/listas';
+@import './base/maps';
+
+/*Componentes*/
+@import './componentes/footer';
+
+
+
+@font-face {
+    font-family: bebasneue;
+    src: url(../assets/font/bebasneue-regular-webfont.woff) format(woff);
+    src: url(../assets/font/bebasneue-regular-webfont.woff2) format(woff2);
+}
+
+*{  margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: bebasneue;
+}
+
+body{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    margin: 0 auto;
+
+    .container{
+        width: 90%;
+        border: 0;  
+
+        .containertitle{
+            text-align: center;
+            color:white;
+            padding: 20px;
+        }
+    }
+
+    .row{
+        .card{
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+                transition: all 1s ease-in-out;
+            }
+        }
+    }
+}
+
+/* MEDIA */
+.card-img-top{
+    object-fit: cover;
+    height: 200px;
+}
+
+.mediatitulo{
+    color: map-get($map: $colores, $key:1 );
+    text-align: center;
+}
+
+/* TOUR */
+.h1fechas{
+    color: map-get($map: $colores, $key:1 );
+    text-align: center;
+}
+
+/* NEWS */
+.background-foto{
+    background-image: url(../assets/fotos/fotosbanda/ivan\ gente\ horizontaljpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    .info{
+        width: 80%;
+        background-color: rgba(0, 0, 0, .2);
+        text-align: center;
+        font-size: $fuentasheis;
+        margin: 0 auto;
+        padding: 30px;
+
+        img{
+            text-align: center;
+            width: 80%;
+            padding: 40px;
+        }
+    }
+
+    p{
+        color: rgb(255, 255, 255);    
+    }
+}
+
+/* CONTACTO */
+
+#h1contact{
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    font-size: $fuentasheim;
+    color: map-get($map: $colores, $key:3 );
+}
+
+.containercontact {
+    border-radius: 15px;
+    background-color: #000000;
+    padding: 20px;
+    width: 50%; 
+    align-items: center;
+    margin: 0 auto; 
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    color: map-get($map: $colores, $key:1 );
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+    
+    input[type=submit] {
+        background-color: white;
+        color: black;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(255, 0, 0);
+          }
+      }
+}

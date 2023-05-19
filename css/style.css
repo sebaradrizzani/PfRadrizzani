@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: bebasneue;
     src: url(../assets/font/bebasneue-regular-webfont.woff) format(woff);
     src: url(../assets/font/bebasneue-regular-webfont.woff2) format(woff2);
@@ -17,10 +17,10 @@ body{
     align-items: center;
     margin: 0 auto;
 }
-
+ */
 
 /* CARD CD */
-.containertitle{
+/* .containertitle{
     text-align: center;
     color:white;
     padding: 20px;
@@ -35,10 +35,10 @@ body{
     transform: scale(1.1);
     cursor: pointer;
     transition: all 1s ease-in-out;
-}
+} */
 
 /* REDES SOCIALES Y FOOTER */
-.containersocial{
+/* .containersocial{
     width: 100%;
     height: 100px;
     background-color: white;
@@ -51,10 +51,10 @@ body{
     text-decoration: none;
     margin: 35px 10px;  
     font-size: 30px;
-}
+} */
 
 /* MEDIA */
-.card-img-top {
+/* .card-img-top {
     object-fit: cover;
     height: 200px;
 }
@@ -62,16 +62,16 @@ body{
 .mediatitulo{
     color: white;
     text-align: center;
-}
+} */
 
 /* TOUR */
-.h1fechas{
+/* .h1fechas{
     color: white;
     text-align: center;
-}
+} */
 
 /*SOBRE AGAINST*/
-.background-foto img{
+/* .background-foto img{
     text-align: center;
     width: 500px;
     padding-bottom: 20px;
@@ -97,10 +97,10 @@ body{
 
 .info p{
     color: white;
-}
+} */
 
 /*CONTACTO*/
-#h1contact{
+/* #h1contact{
     text-align: center;
     align-items: center;
     padding: 30px;
@@ -143,4 +143,4 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
     color: red;
-}
+} */
